@@ -8,6 +8,10 @@ const theme = createTheme({
     secondary: {
       main: "#FFA52E",
     },
+    status: {
+      info: "#FFA52E",
+      warning: "#ED6982",
+    },
   },
   spacing: 10,
   typography: {
