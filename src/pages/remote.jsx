@@ -5,20 +5,30 @@ import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
 
 // components:
-import Page from "../components/Page";
-import Form from "../components/Form";
+import Page from "../components/content";
+import Form from "../components/form";
 
 const useStyles = makeStyles((theme) => ({
   form: {
-    margin: theme.spacing(2.7, 0),
+    textAlign: "center",
+  },
+
+  paper: {
     padding: theme.spacing(5, 2.7),
+    width: "302px",
+    margin: "0 auto",
   },
 }));
 
-const BecomeRemoteReadyPage = () => {
+const RemotePage = () => {
   const classes = useStyles();
   return (
-    <Grid container justifyContent="space-around" alignItems="center">
+    <Grid
+      container
+      spacing={3}
+      justifyContent="space-around"
+      alignItems="center"
+    >
       <Grid item xs={12} lg={6}>
         <Page
           title="The Future of Work in the now: Why you should Become Remote-ready"
@@ -49,12 +59,12 @@ const BecomeRemoteReadyPage = () => {
         </Page>
       </Grid>
 
-      <Grid item xs={12} lg={4}>
-        <Paper className={classes.form} elevation={3}>
+      <Grid item xs={12} lg={4} className={classes.form}>
+        <Paper className={classes.paper} elevation={3}>
           <Form />
         </Paper>
       </Grid>
     </Grid>
   );
 };
-export default BecomeRemoteReadyPage;
+export default RemotePage;

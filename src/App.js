@@ -2,7 +2,7 @@
 import Container from "@material-ui/core/Container";
 
 // pages:
-import BecomeRemoteReadyPage from "./pages/BecomeRemoteReadyPage";
+import RemotePage from "./pages/remote";
 
 // styles:
 import "./App.scss";
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Container disableGutters>
-        <BecomeRemoteReadyPage />
+        <RemotePage />
       </Container>
     </div>
   );

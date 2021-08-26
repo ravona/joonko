@@ -48,6 +48,7 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(3.2, "auto", 2.5),
     padding: theme.spacing(1.3, 2.6),
     textTransform: "none",
+    whiteSpace: "nowrap",
     backgroundColor: theme.palette.status.info,
   },
 

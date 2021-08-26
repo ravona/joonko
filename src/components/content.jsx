@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Page = ({ title, subtitle, children }) => {
+const Content = ({ title, subtitle, children }) => {
   const classes = useStyles();
   return (
     <div className={classes.page}>
@@ -47,4 +47,4 @@ const Page = ({ title, subtitle, children }) => {
   );
 };
 
-export default Page;
+export default Content;
