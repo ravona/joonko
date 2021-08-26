@@ -3,11 +3,14 @@
 }
 
 html {
-  min-height: 100vh;
+  height: -webkit-fill-available;
 }
 
+html,
 body {
-  height: 100vh;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
 }
 
 a {
@@ -16,10 +19,6 @@ a {
 
 ul {
   padding-left: 1rem;
-}
-
-li {
-  line-height: 1.5;
 }
 
 p {
